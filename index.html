@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <a id="link"></a>
     <script>
         var images = [
             "pasted-image-101-4.png",
@@ -600,13 +601,10 @@
         var link = document.getElementById('link');
         link.href = 'http://images.google.com/searchbyimage?image_url=' + x.src;
         link.appendChild(x);
-        document.body.appendChild(a);
-
         /* var h = document.createElement("h1");
         h.innerText = x.src
         document.body.appendChild(h); */
     </script>
-    <a id="link"></a>
 </body>
 
 </html>
