@@ -595,8 +595,15 @@
             "pasted-image-small-98-7.png"
         ];
         var x = document.createElement("IMG");
+        var baseUrl = 'https://felixroos.github.io/art-quiz/';
         x.src = 'images/' + images[Math.floor(Math.random() * images.length)];
+        var a = document.createElement("A");
+        a.href = 'http://images.google.com/searchbyimage?image_url=' + baseUrl + x.src;
+        a.target = '_blank';
+        a.innerText = 'Lösung';
         document.body.appendChild(x);
+        document.body.appendChild(a);
+
         /* var h = document.createElement("h1");
         h.innerText = x.src
         document.body.appendChild(h); */
